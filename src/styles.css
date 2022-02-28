@@ -1,1 +1,73 @@
 /* You can add global styles to this file, and also import other style files */
+
+/* Resets */
+html {
+    box-sizing: border-box;
+    font-size: 18px;
+}
+
+*, *::after, *::before {
+    box-sizing: inherit;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+h1, 
+h2, 
+h3, 
+a,
+p, 
+button,
+article,
+section, 
+button {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+}
+
+/* Variables */
+:root {
+
+    --clr-hsl-white: 220, 100%, 99%;
+
+    /* Primary */
+    --clr-hsl-primary-blue: 246, 80%, 60%;
+    --clr-hsl-primary-soft-blue: 195, 74%, 62%;
+    --clr-hsl-primary-light-red-1: 15, 100%, 70%;
+    --clr-hsl-primary-light-red-2: 348, 100%, 68%;
+    --clr-hsl-primary-lime-green: 145, 58%, 55%;
+    --clr-hsl-primary-violet: 264, 64%, 52%;
+    --clr-hsl-primary-soft-orange: 43, 84%, 65%;
+
+
+    /* Neutral */
+    --clr-hsl-neutral-very-dark-blue: 226, 43%, 10%;
+    --clr-hsl-neutral-dark-blue: 235, 46%, 20%;
+    --clr-hsl-neutral-desaturated-blue: 235, 45%, 61%;
+    --clr-hsl-neutral-pale-blue: 236, 100%, 87%;
+
+    /* Font size */
+    --fs-base: 1rem;
+
+}
+
+/* Defaults */
+body {
+    font-family: 'Rubik', sans-serif;
+    background-color: hsl(var(--clr-hsl-neutral-very-dark-blue));
+    color: hsl(var(--clr-hsl-white));
+
+}
