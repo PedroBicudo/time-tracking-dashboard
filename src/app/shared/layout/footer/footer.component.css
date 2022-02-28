@@ -1,0 +1,13 @@
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0em 1.27em;
+    height: 100%;
+}
+
+@media screen and (min-width: 992px) {
+    footer {
+        padding: 0em 9.11em;
+    }
+}

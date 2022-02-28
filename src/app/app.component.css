@@ -4,14 +4,6 @@
     grid-template-columns: 1fr;
     grid-template-rows: 1fr min-content;
     min-height: 100vh;
-    --padding-elements: 0em 1.27em;
-}
-
-main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: var(--padding-elements);
 }
 
 footer {
