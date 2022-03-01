@@ -1,0 +1,14 @@
+.dashboard {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.22em;
+}
+
+
+@media screen and (min-width: 1000px) {
+    .dashboard {
+        flex-direction: row;
+    }
+    
+}

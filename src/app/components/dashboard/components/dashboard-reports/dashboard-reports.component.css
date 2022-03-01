@@ -1,0 +1,19 @@
+.reports-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.22em;
+}
+
+@media screen and (min-width: 665px) {
+    .reports-container {
+        grid-template-columns: 1fr 1fr;
+    }
+    
+}
+
+@media screen and (min-width: 1200px) {
+    .reports-container {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    
+}

@@ -2,12 +2,5 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 0em 1.27em;
-    height: 100%;
-}
-
-@media screen and (min-width: 992px) {
-    main {
-        padding: 0em 9.11em;
-    }
+    min-height: 100%;
 }

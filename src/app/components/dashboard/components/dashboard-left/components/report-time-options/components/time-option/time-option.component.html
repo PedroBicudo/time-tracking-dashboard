@@ -1,0 +1,16 @@
+<div class="time-option">
+    <label 
+        [for]="optionName" 
+        class="time-option__label"
+        [ngClass]="{
+            'active': isSelected
+        }"
+    >{{ capitalizeOption() }}</label>
+    
+    <input 
+        type="radio"
+        [id]="optionName"
+        name="time-option"
+        class="time-option__input"
+        (change)="onSelectOption()">
+</div>

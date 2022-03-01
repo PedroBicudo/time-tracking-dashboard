@@ -1,0 +1,17 @@
+<div class="time-options">
+    <app-time-option 
+        [optionName]="'daily'"
+        [isSelected]="option == 'daily'"
+        (optionSelected)="onOptionSelected('daily')"
+    ></app-time-option>
+    <app-time-option 
+        [optionName]="'weekly'"
+        [isSelected]="option == 'weekly'"
+        (optionSelected)="onOptionSelected('weekly')"
+    ></app-time-option>
+    <app-time-option 
+        [optionName]="'monthly'"
+        [isSelected]="option == 'monthly'"
+        (optionSelected)="onOptionSelected('monthly')"
+    ></app-time-option>
+</div>

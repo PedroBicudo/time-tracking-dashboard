@@ -1,0 +1,130 @@
+.card-report {
+    min-height: 185px;
+    min-width: 314px;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-report__top {
+    min-height: 83px;
+    display: flex;
+    justify-content: flex-end;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    overflow: hidden;
+    padding: 0em 1.5em;
+}
+
+.card-report__top.work {
+    background-color: hsl(var(--clr-hsl-primary-light-red-1));    
+}
+
+.card-report__top.play {
+    background-color: hsl(var(--clr-hsl-primary-soft-blue));    
+
+}
+
+.card-report__top.study {
+    background-color: hsl(var(--clr-hsl-primary-light-red-2));
+
+}
+
+.card-report__top.exercise {
+    background-color: hsl(var(--clr-hsl-primary-lime-green));
+
+}
+
+.card-report__top.social {
+    background-color: hsl(var(--clr-hsl-primary-violet));
+
+}
+
+.card-report__top.self-care {
+    background-color: hsl(var(--clr-hsl-primary-soft-orange));
+
+}
+
+.card-report__icon {
+    object-fit: cover;
+    width: 120px;
+    height: 78px;
+}
+
+.card-report__content {
+    position: relative;
+    width: 100%;
+    background-color: hsl(var(--clr-hsl-neutral-dark-blue));
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+    padding: 0.5em 1.22em 1.66em 1.22em;
+    display: flex;
+    flex-direction: column;
+    gap: .88em;
+}
+
+.card-report__content::before {
+    content: '';
+    position: absolute;
+    top: -26px;
+    left: 0;
+    right: 0;
+    height: 30px;
+    background-color: hsl(var(--clr-hsl-neutral-dark-blue));
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+}
+
+.card-report__header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-report__name {
+    font-size: var(--fs-base);
+    font-weight: 500;
+}
+
+/* TODO - Adicionar algum comportamento */
+.card-report__options-icon {
+    max-width: 22px;
+    object-fit: contain;
+    cursor: pointer;
+}
+
+.card-report__info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.card-report__week-hours {
+    font-size: var(--fs-xlg);
+    font-weight: 400;
+}
+
+.card-report__last-week-hours {
+    font-size: var(--fs-sm);
+    color: hsl(var(--clr-hsl-neutral-pale-blue));
+}
+
+@media screen and (min-width: 992px) {
+    .card-report {
+        min-width: 256px;
+    }
+
+    .card-report__content {
+        gap: .5em;
+    }
+
+    .card-report__info {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 1.3em;
+    }
+        
+    .card-report__week-hours {
+        font-weight: 300;
+    }
+
+}

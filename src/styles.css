@@ -41,7 +41,7 @@ button {
 /* Variables */
 :root {
 
-    --clr-hsl-white: 220, 100%, 99%;
+    --clr-hsl-white: 246, 83%, 91%;
 
     /* Primary */
     --clr-hsl-primary-blue: 246, 80%, 60%;
@@ -60,8 +60,19 @@ button {
     --clr-hsl-neutral-pale-blue: 236, 100%, 87%;
 
     /* Font size */
+    --fs-sm: 0.83rem;
     --fs-base: 1rem;
+    --fs-lg: 1.27rem;
+    --fs-xlg: 1.77rem;
 
+}
+
+@media screen and (min-width: 992px) {
+    :root {
+        --fs-lg: 2.33rem;
+        --fs-xlg: 2.88rem;    
+    }
+    
 }
 
 /* Defaults */

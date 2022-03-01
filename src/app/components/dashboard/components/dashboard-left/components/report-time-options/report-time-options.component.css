@@ -1,0 +1,24 @@
+.time-options {
+    background-color: hsl(var(--clr-hsl-neutral-dark-blue));
+    padding: 3.5em 1.6em 1.38em 1.6em;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+    display: flex;
+    justify-content: space-between;
+}
+
+@media screen and (min-width: 665px) {
+    .time-options {
+        justify-content: space-around;
+    }
+    
+}
+
+@media screen and (min-width: 992px) {
+    .time-options {
+        padding-top: 4em;
+        flex-direction: column;
+        gap: 1.27em;
+    }
+    
+}

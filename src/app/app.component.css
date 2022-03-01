@@ -3,19 +3,20 @@
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr min-content;
-    min-height: 100vh;
+    padding: 4.44em 0em;
+    overflow-x: hidden;
 }
 
 footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: var(--padding-elements);
 }
 
 @media screen and (min-width: 992px) {
     .website {
         --padding-elements: 0em 9.11em;
+        padding: 2.5em 0em;
     }
 
 }

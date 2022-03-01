@@ -1,0 +1,17 @@
+.time-option__label {
+    font-size: var(--fs-base);
+    cursor: pointer;
+    color: hsl(var(--clr-hsl-white), .5);
+    transition: color 300ms;
+}
+
+.time-option__label.active,
+.time-option__label:hover {
+    color: hsl(var(--clr-hsl-white));
+}
+
+.time-option__input {
+    position: absolute;
+    top: -9999px;
+
+}

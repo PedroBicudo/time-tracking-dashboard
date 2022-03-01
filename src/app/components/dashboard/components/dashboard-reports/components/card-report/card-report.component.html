@@ -1,0 +1,26 @@
+<article class="card-report">
+    
+    <div class="card-report__top">
+        <img 
+            src="assets/images/icon-work.svg" 
+            alt="work" 
+            class="card-report__icon"
+            appCardIconController
+            [timeReportType]="report.title"
+        >
+    </div>
+    <div class="card-report__content">
+        <header class="card-report__header">
+            <h3 class="card-report__name">{{ report.title }}</h3>
+            <img src="assets/images/icon-ellipsis.svg" alt="Options" class="card-report__options-icon">
+        </header>
+        <div class="card-report__info">
+            <p class="card-report__week-hours">
+                {{ report.timeframes[timeframeType].current}}hrs
+            </p>
+            <p class="card-report__last-week-hours">
+                Last Week - {{ report.timeframes[timeframeType].previous }}hrs
+            </p>
+        </div>
+    </div>
+</article>

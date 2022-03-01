@@ -1,0 +1,9 @@
+.dashboard__left {
+    min-width: 315px;
+}
+
+@media screen and (min-width: 992px) {
+    .dashboard__left {
+        min-width: 256px;
+    }
+}
