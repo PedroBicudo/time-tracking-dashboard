@@ -1,3 +1,4 @@
+import { TimeframeType } from 'src/app/components/dashboard/models/time-report.model';
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 
 @Component({
@@ -8,7 +9,7 @@ import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 export class TimeOptionComponent implements OnInit {
 
   @Input()
-  optionName!: "daily" | "weekly" | "monthly";
+  optionName!: TimeframeType;
 
   @Input()
   isSelected!: boolean;
