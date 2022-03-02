@@ -60,6 +60,7 @@
     display: flex;
     flex-direction: column;
     gap: .88em;
+    cursor: pointer;
 }
 
 .card-report__content::before {
@@ -72,6 +73,12 @@
     background-color: hsl(var(--clr-hsl-neutral-dark-blue));
     border-top-left-radius: 16px;
     border-top-right-radius: 16px;
+}
+
+.card-report__content:hover,
+.card-report__content:hover::before {
+    --hover-color: 236, 41%, 39%;
+    background-color: hsl(var(--hover-color));
 }
 
 .card-report__header {
