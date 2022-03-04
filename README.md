@@ -1,27 +1,53 @@
-# TimeTrackingDashboardMain
+# Frontend Mentor - Time tracking dashboard (Solução)
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.2.0.
+Essa é uma solução para o desafio [Time tracking dashboard challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/time-tracking-dashboard-UIQ7167Jw).
+O frontend Mentor te ajuda a desenvolver as suas habilidades de programação atráves da construção de projetos realistas.
 
-## Development server
+## índice
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+- [Visão Geral](#visão-geral)
+  - [O desafio](#o-desafio)
+  - [Screenshot](#screenshot)
+- [Processo de desenvolvimento](#processo-de-desenvolvimento)
+  - [Tecnologias usadas](#tecnologias-usadas)
+  - [O que eu aprendi](#o-que-eu-aprendi)
+- [Getting Started](#getting-started)
+  - [Dependências](#instalando-as-dependências)
+  - [Executando o projeto](#executando-o-projeto)
+- [Author](#author)
 
-## Code scaffolding
+## Visão Geral
+### O desafio
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Os usuários devem ser capaz de:
+- Ver um layout diferente de acordo com o tamanho da tela
+- Ver estados hover para todos os elementos da página
+- Navegar entre os estados: Daily, Weekly e Monthly
+## Processo de desenvolvimento
+### Tecnologias usadas
+- HTML5
+- Flexbox
+- Grid
+- Mobile-first
+- [Angular](angular.io/)
+- Figma
+### O que eu aprendi
+- Replicar o design no figma ajuda a dar nomes adequados aos componentes.
+- Desenhar uma árvore representando a comunicação entre componentes ajuda a visualizar o projeto como um todo.
+- Fazer um Event Bubbling com o decorator @Output.
+- Aprendi a realizar a comunicação entre diferentes componentes por meio de services.
 
-## Build
+## Autor
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+- Frontend Mentor - [@PedroBicudo](https://www.frontendmentor.io/profile/PedroBicudo)
+- Linkedin - [PedroBicudo](https://www.linkedin.com/in/pedro-bicudo)
 
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Getting Started
+### Instalando as dependências
+```
+npm install
+```
+### Executando o projeto
+```
+ng serve
+```
