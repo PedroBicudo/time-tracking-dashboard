@@ -9,12 +9,6 @@ import { ReportService } from './../../../../services/report/report.service';
 })
 export class ReportTimeOptionsComponent implements OnInit {
 
-  options: TimeframeType[] = [
-    "daily",
-    "weekly",
-    "monthly"
-  ];
-
   optionSelected!: { option: TimeframeType };
 
   constructor(
