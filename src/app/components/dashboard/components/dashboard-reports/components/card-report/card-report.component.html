@@ -9,10 +9,12 @@
             [timeReportType]="report.title"
         >
     </div>
-    <div class="card-report__content">
+    <div class="card-report__content" #reportContent>
         <header class="card-report__header">
             <h3 class="card-report__name">{{ report.title }}</h3>
-            <img src="assets/images/icon-ellipsis.svg" alt="Options" class="card-report__options-icon">
+            <button class="card-report__options" #reportMenuOptions>
+                <img src="assets/images/icon-ellipsis.svg" alt="Options" class="card-report__options-icon">
+            </button>
         </header>
         <div class="card-report__info">
             <p class="card-report__current">

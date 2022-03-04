@@ -3,6 +3,7 @@
     min-width: 314px;
     display: flex;
     flex-direction: column;
+    overflow-x: hidden;
 }
 
 .card-report__top {
@@ -77,8 +78,8 @@
     transition: background-color 300ms;
 }
 
-.card-report__content:hover,
-.card-report__content:hover::before {
+.card-report__content.active:hover,
+.card-report__content.active:hover::before {
     --hover-color: 236, 41%, 39%;
     background-color: hsl(var(--hover-color));
 }
@@ -93,11 +94,34 @@
     font-weight: 500;
 }
 
-/* TODO - Adicionar algum comportamento */
+.card-report__options {
+    position: relative;
+}
+
+.card-report__options:focus {
+    outline: 1px solid hsl(var(--clr-hsl-white));
+    outline-offset: 4px;
+}
+
+.card-report__options::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    padding: 1em 1.7em;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
 .card-report__options-icon {
     max-width: 22px;
     object-fit: contain;
     cursor: pointer;
+}
+
+.card-report__options:hover .card-report__options-icon,
+.card-report__options:focus .card-report__options-icon {
+    filter: brightness(0) invert(1);
 }
 
 .card-report__info {
