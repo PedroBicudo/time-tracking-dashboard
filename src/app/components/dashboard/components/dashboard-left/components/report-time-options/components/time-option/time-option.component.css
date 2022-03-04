@@ -5,6 +5,10 @@
     transition: color 300ms;
 }
 
+.time-option__label::selection {
+    background-color: transparent;
+}
+
 .time-option__label.active,
 .time-option__label:hover {
     color: hsl(var(--clr-hsl-white));
