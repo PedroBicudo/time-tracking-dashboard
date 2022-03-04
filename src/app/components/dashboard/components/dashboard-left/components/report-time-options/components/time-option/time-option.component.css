@@ -9,6 +9,7 @@
     background-color: transparent;
 }
 
+.time-option:focus-within > .time-option__label,
 .time-option__label.active,
 .time-option__label:hover {
     color: hsl(var(--clr-hsl-white));
