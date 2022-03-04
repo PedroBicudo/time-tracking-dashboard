@@ -1,5 +1,6 @@
-import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { TimeframeType } from 'src/app/components/dashboard/models/time-report.model';
+import { ReportService } from './../../../../services/report/report.service';
 
 @Component({
   selector: 'app-report-time-options',
@@ -14,20 +15,18 @@ export class ReportTimeOptionsComponent implements OnInit {
     "monthly"
   ];
 
-  @Output()
-  optionSelected = new EventEmitter<TimeframeType>();
+  optionSelected!: { option: TimeframeType };
 
-  @Input()
-  option!: TimeframeType;
-
-  constructor() { }
+  constructor(
+    private reportService: ReportService
+  ) { }
 
   ngOnInit(): void {
-    
+    this.optionSelected = this.reportService.timeframeOption;
   }
 
   onOptionSelected(timeframeType: TimeframeType) {
-    this.optionSelected.emit(timeframeType);
+    this.reportService.timeframeOption.option = timeframeType;
     
   }
 

@@ -17,7 +17,6 @@ export class TimeOptionComponent implements OnInit {
   @Output()
   optionSelected = new EventEmitter<void>();
 
-
   constructor() { }
 
   ngOnInit(): void {

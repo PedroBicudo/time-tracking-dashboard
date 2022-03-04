@@ -1,5 +1,6 @@
-import { TimeframeType, TimeReport } from 'src/app/components/dashboard/models/time-report.model';
 import { Component, Input, OnInit } from '@angular/core';
+import { TimeframeType, TimeReport } from 'src/app/components/dashboard/models/time-report.model';
+import { ReportService } from './../../../../services/report/report.service';
 
 @Component({
   selector: 'app-card-report',
@@ -12,11 +13,14 @@ export class CardReportComponent implements OnInit {
   report!: TimeReport;
 
   @Input()
-  timeframeType!: TimeframeType;
+  timeframeOption!: { option: TimeframeType };
 
-  constructor() { }
+  constructor(
+    private reportService: ReportService
+  ) { }
 
   ngOnInit(): void {
+    this.timeframeOption = this.reportService.timeframeOption;
   }
 
 }

@@ -1,17 +1,17 @@
 <div class="time-options">
     <app-time-option 
         [optionName]="'daily'"
-        [isSelected]="option == 'daily'"
+        [isSelected]="optionSelected.option == 'daily'"
         (optionSelected)="onOptionSelected('daily')"
     ></app-time-option>
     <app-time-option 
         [optionName]="'weekly'"
-        [isSelected]="option == 'weekly'"
+        [isSelected]="optionSelected.option == 'weekly'"
         (optionSelected)="onOptionSelected('weekly')"
     ></app-time-option>
     <app-time-option 
         [optionName]="'monthly'"
-        [isSelected]="option == 'monthly'"
+        [isSelected]="optionSelected.option == 'monthly'"
         (optionSelected)="onOptionSelected('monthly')"
     ></app-time-option>
 </div>
