@@ -12,6 +12,7 @@ import { ReportTimeOptionsComponent } from './components/dashboard/components/da
 import { CardReportComponent } from './components/dashboard/components/dashboard-reports/components/card-report/card-report.component';
 import { TimeOptionComponent } from './components/dashboard/components/dashboard-left/components/report-time-options/components/time-option/time-option.component';
 import { CardIconControllerDirective } from './components/dashboard/components/dashboard-reports/components/card-report/directives/card-icon-controller.directive';
+import { AttributionComponent } from './components/attribution/attribution.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { CardIconControllerDirective } from './components/dashboard/components/d
     ReportTimeOptionsComponent,
     CardReportComponent,
     TimeOptionComponent,
-    CardIconControllerDirective
+    CardIconControllerDirective,
+    AttributionComponent
   ],
   imports: [
     BrowserModule

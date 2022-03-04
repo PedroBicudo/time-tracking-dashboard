@@ -3,8 +3,9 @@
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr min-content;
-    padding: 4.44em 0em;
+    padding: 4.44em 0em 0em 0em;
     overflow-x: hidden;
+    gap: 2em;
 }
 
 footer {

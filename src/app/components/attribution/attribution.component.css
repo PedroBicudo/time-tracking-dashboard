@@ -1,0 +1,28 @@
+.attribution {
+    display: flex;
+    flex-direction: column;
+    padding: 2em 0em;
+    line-height: 1.5;
+}
+
+/* Front end Mentor */
+.attribution__fm {
+    text-align: center;
+}
+
+/* Code owner */
+.attribution__co {
+    text-align: center;
+}
+
+.attribution__link {
+    color: hsl(var(--clr-hsl-neutral-desaturated-blue));
+    transition: color 300ms;
+}
+
+.attribution__link:hover,
+.attribution__link:focus {
+    color: hsl(var(--clr-hsl-primary-soft-orange));
+    outline: none;
+}
+
