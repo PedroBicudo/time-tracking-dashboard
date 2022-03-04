@@ -115,6 +115,12 @@
     color: hsl(var(--clr-hsl-neutral-pale-blue));
 }
 
+.card-report__previous > span:first-of-type::after {
+    content: ' - ';
+}
+
+
+
 @media screen and (min-width: 992px) {
     .card-report {
         min-width: 256px;

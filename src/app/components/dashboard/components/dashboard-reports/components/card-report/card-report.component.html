@@ -19,7 +19,18 @@
                 {{ report.timeframes[timeframeOption.option].current}}hrs
             </p>
             <p class="card-report__previous">
-                Last Week - {{ report.timeframes[timeframeOption.option].previous }}hrs
+                <span [ngSwitch]="timeframeOption.option">
+                    <ng-template [ngSwitchCase]="'daily'">
+                        Yesterday
+                    </ng-template>
+                    <ng-template [ngSwitchCase]="'weekly'">
+                        Last Week
+                    </ng-template>
+                    <ng-template [ngSwitchCase]="'monthly'">
+                        Last Month
+                    </ng-template>
+                </span>
+                {{ report.timeframes[timeframeOption.option].previous }}hrs
             </p>
         </div>
     </div>
