@@ -61,6 +61,7 @@
     flex-direction: column;
     gap: .88em;
     cursor: pointer;
+    transition: background-color 300ms;
 }
 
 .card-report__content::before {
@@ -73,6 +74,7 @@
     background-color: hsl(var(--clr-hsl-neutral-dark-blue));
     border-top-left-radius: 16px;
     border-top-right-radius: 16px;
+    transition: background-color 300ms;
 }
 
 .card-report__content:hover,
@@ -118,7 +120,6 @@
 .card-report__previous > span:first-of-type::after {
     content: ' - ';
 }
-
 
 
 @media screen and (min-width: 992px) {
