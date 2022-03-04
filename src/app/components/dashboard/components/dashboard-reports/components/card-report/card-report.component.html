@@ -15,10 +15,10 @@
             <img src="assets/images/icon-ellipsis.svg" alt="Options" class="card-report__options-icon">
         </header>
         <div class="card-report__info">
-            <p class="card-report__week-hours">
+            <p class="card-report__current">
                 {{ report.timeframes[timeframeOption.option].current}}hrs
             </p>
-            <p class="card-report__last-week-hours">
+            <p class="card-report__previous">
                 Last Week - {{ report.timeframes[timeframeOption.option].previous }}hrs
             </p>
         </div>

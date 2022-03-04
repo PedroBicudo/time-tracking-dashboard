@@ -105,12 +105,12 @@
     flex-wrap: wrap;
 }
 
-.card-report__week-hours {
+.card-report__current {
     font-size: var(--fs-xlg);
     font-weight: 400;
 }
 
-.card-report__last-week-hours {
+.card-report__previous {
     font-size: var(--fs-sm);
     color: hsl(var(--clr-hsl-neutral-pale-blue));
 }
